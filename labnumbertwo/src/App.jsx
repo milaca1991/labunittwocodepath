@@ -9,6 +9,7 @@ const App = () => {
   const buyDoubleStuffed = () => {
     if (count >= 10) {
       setMultiplier(multiplier * 2);
+      setCount(count - 10);
     }
   }
 
@@ -29,7 +30,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="header">
-        <h1>Samosa selector</h1>
+        <h1>Empanada selector</h1>
         <h2>Count: {count}</h2>
         <img
           src="/img/empanada.png"
